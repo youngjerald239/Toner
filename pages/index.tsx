@@ -8,10 +8,7 @@ export default function Home() {
         <title>Toner</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <h1>This is a Dope Spotify clone build</h1>
-
-      <main>
+      <main className="">
         {/* Sidebar */}
         <Sidebar />
         {/* Center */}
@@ -19,6 +16,19 @@ export default function Home() {
 
       <div>
         {/* Player */}
+        <p className="cursor-pointer hover:text-white">Playlist name...</p>
+        <p className="cursor-pointer hover:text-white">Playlist name...</p>
+        <p className="cursor-pointer hover:text-white">Playlist name...</p>
+        <p className="cursor-pointer hover:text-white">Playlist name...</p>
+        <p className="cursor-pointer hover:text-white">Playlist name...</p>
+        <p className="cursor-pointer hover:text-white">Playlist name...</p>
+        <p className="cursor-pointer hover:text-white">Playlist name...</p>
+        <p className="cursor-pointer hover:text-white">Playlist name...</p>
+        <p className="cursor-pointer hover:text-white">Playlist name...</p>
+        <p className="cursor-pointer hover:text-white">Playlist name...</p>
+        <p className="cursor-pointer hover:text-white">Playlist name...</p>
+        <p className="cursor-pointer hover:text-white">Playlist name...</p>
+        <p className="cursor-pointer hover:text-white">Playlist name...</p>
       </div>
 
     </div>
