@@ -8,19 +8,22 @@ import {
 
 function Sidebar() {
     return (
-        <div>
+        <div className="text-gray-700">
             <div>
-                <button>
+                <button className="flex items-center space-x-2 
+                hover:text-white">
                     <HomeIcon className="h-5 w-5"/>
                     <p>Home</p>
                 </button>
-                <button>
+                <button className="flex items-center space-x-2 
+                hover:text-white">
                     <SearchIcon className="h-5 w-5"/>
                     <p>Search</p>
                 </button>
-                <button>
+                <button className="flex items-center space-x-2 
+                hover:text-white">
                     <LibraryIcon className="h-5 w-5"/>
-                    <p>Library</p>
+                    <p>My Library</p>
                 </button>
                 <button>
                     <PlusCircleIcon className="h-5 w-5"/>
