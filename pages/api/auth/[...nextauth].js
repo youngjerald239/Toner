@@ -1,5 +1,6 @@
 import NextAuth from "next-auth"
 import SpotifyProvider from "next-auth/providers/spotify"
+import { refreshAccessToken } from "spotify-web-api-node/src/server-methods"
 import { LOGIN_URL } from "../../../lib/spotify"
 
 export default NextAuth({
@@ -32,8 +33,13 @@ export default NextAuth({
 
       //Return previous token if the access token has not yet expired
       if (Date.now() < token.accessTokenExpires) {
+          console.log("EXISTING ACCESS TOKEN IS VALID")
           return token
       }
+
+      // Access token has expired, need to refresh
+      console.log("ACCESS TOKEN HAS EXPIRED, REFRESHING...")
+      return await refreshAccessToken(token)
     }
   }
 })
